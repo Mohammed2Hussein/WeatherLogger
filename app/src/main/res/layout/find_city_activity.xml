@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:focusable="auto"
+    android:focusableInTouchMode="true"
+    tools:context=".view.FindCityActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etxtFindCityActivityCityName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_border_edittext"
+                android:ems="10"
+                android:hint="@string/find_city_activity_country_capital_only"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <Button
+                android:id="@+id/btnFindCityActivityFindCity"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_colored_bg_rounded_corners"
+                android:text="@string/find_city_activity_find_city_button"
+                android:textAllCaps="false" />
+
+            <ImageButton
+                android:id="@+id/ibtnFindCityActivityFindLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_colored_bg_rounded_corners"
+                app:srcCompat="@android:drawable/ic_menu_mylocation" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            tools:context=".view.MainActivity">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewFindCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtFindCityActivityNoDataFound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="@string/main_activity_no_data_to_display_txt"
+                android:textSize="20dp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnFindCityActivitySave"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/button_disabled_colored_bg_rounded_corners"
+                    android:text="@string/find_city_activity_save_button"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btnFindCityActivityCancel"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_colored_bg_rounded_corners"
+                    android:text="@string/find_city_activity_cancel_button"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

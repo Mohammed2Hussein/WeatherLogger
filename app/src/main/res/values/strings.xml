@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Weather Logger</string>
+    <!--Main Activity-->
+    <string name="main_activity_add_city_button">Add City</string>
+    <string name="main_activity_no_data_to_display_txt">No Data to display</string>
+    <string name="main_activity_single_row_temp">Temperature:</string>
+    <string name="main_activity_single_row_Date">Date:</string>
+    <string name="main_activity_single_row_more_details">More Details</string>
+    <!--FindCity Activity-->
+    <string name="find_city_activity_find_city_button">Find City</string>
+    <string name="find_city_activity_save_button">Save</string>
+    <string name="find_city_activity_cancel_button">Cancel</string>
+    <string name="find_city_activity_city_name_is_empty">City name is empty!</string>
+    <string name="find_city_activity_city_request_error">Something went wrong!</string>
+    <string name="find_city_activity_country_capital_only">Capital city only</string>
+    <string name="find_city_activity_country_name_title">Country: </string>
+    <string name="find_city_activity_city_name_title">City: </string>
+    <string name="find_city_activity_temp_title">Temp: </string>
+
+    <!--Detailed Activity-->
+    <string name="detailed_activity_country">Country:</string>
+    <string name="detailed_activity_city">City:</string>
+    <string name="detailed_activity_desc">Description:</string>
+    <string name="detailed_activity_temp">Temp:</string>
+    <string name="detailed_activity_max_temp">Max Temp:</string>
+    <string name="detailed_activity_min_temp">Min Temp:</string>
+    <string name="detailed_activity_visibilty">Visibility:</string>
+    <string name="detailed_activity_wind_speed">Wind Speed: </string>
+</resources>
